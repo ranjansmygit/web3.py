@@ -1,1 +1,16 @@
-.[docs]
+Install Node.js, you need to install Node.js on your machine. You can download the installer from the official website (https://nodejs.org).
+
+`npm install web3`
+Create a test file: Create a new file with the extension ".js" and add the following code to it:
+
+`
+const Web3 = require('web3');
+
+// Create an instance of web3 using HTTP provider
+const web3 = new Web3(new Web3.providers.HttpProvider('http://localhost:8545'));
+
+// Print the version of web3
+console.log(web3.version);
+`
+Run the test file: Save the file and run it using Node.js by typing the following command in your terminal or command prompt:
+`node test.js`
